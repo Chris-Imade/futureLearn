@@ -1,0 +1,12 @@
+export { default as NavBar } from './NavBar';
+export { default as PlainBtn } from './PlainBtn';
+export { default as Header } from './Header';
+export { default as Banner } from './Banner';
+export { default as Plan } from './Plan';
+export { default as Climate } from './Climate';
+export { default as ShortCourses } from './ShortCourses';
+export { default as FutureLearn } from './FutureLearn';
+export { default as OurWorld } from "./OurWorld";
+export { default as Explore } from './Explore';
+export { default as News } from './News';
+export { default as Footer } from './Footer';

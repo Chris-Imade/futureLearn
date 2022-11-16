@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    .move {
+        margin-left: -2rem;
+        margin-top: -3rem;
+    }
+    .short-course-step::after {
+      background-image: url("./assets/short-course-track.svg");
+      background-repeat: no-repeat;
+      background-position-x: 0;
+      background-position-y: 100%;
+      top: 30rem;
+      content: "";
+      height: 285px;
+      left: -27px;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+    .expert-track-step::after {
+      background-image: url("./assets/expert-track-step.svg");
+      background-repeat: no-repeat;
+      background-position-x: 0;
+      background-position-y: 100%;
+      top: 47.8rem;
+      content: "";
+      height: 836px;
+      left: -27px;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+    .credentials-track-step::after {
+      background-image: url("./assets/credential-step.svg");
+      background-repeat: no-repeat;
+      background-position-x: 0;
+      background-position-y: 100%;
+      bottom: 19rem;
+      content: "";
+      height: 298px;
+      left: 503px;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
 }
