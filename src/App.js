@@ -7,7 +7,7 @@ import Root from "./Root";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app overflow-x-hidden">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Root />} />

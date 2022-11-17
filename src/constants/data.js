@@ -32,6 +32,12 @@ import CIMAction from "../assets/cim-action.svg";
 import CoventryAction from "../assets/coventry-action.svg";
 
 
+import ShortCIcon from "../assets/sc-i.png";
+import ExpertTIcon from "../assets/et-i.png";
+import MicroDIcon from "../assets/mc-i.png";
+import OnlineDIcon from "../assets/od-i.png";
+
+
 export default {
     FutureLine
 }
@@ -235,4 +241,31 @@ export const expertTracks = [
         btnAction: "Business & Management",
         imgAction: CoventryAction
     }
+]
+
+export const navCourses = [
+    {
+        tilte: "Short Courses",
+        desc: "Learn new skills with a flexible online course",
+        id: 1,
+        image: ShortCIcon
+    },
+    {
+        tilte: "ExpertTracks",
+        desc: "Upskill with a series of specialist courses",
+        id: 2,
+        image: ExpertTIcon
+    },
+    {
+        tilte: "Microcredentials",
+        desc: "Earn professional or academic accredition",
+        id: 1,
+        image: MicroDIcon
+    },
+    {
+        tilte: "Online degrees",
+        desc: "Study flexible online as you build to a degree",
+        id: 1,
+        image: OnlineDIcon
+    },
 ]

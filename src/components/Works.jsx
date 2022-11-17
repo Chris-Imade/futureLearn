@@ -109,10 +109,10 @@ const Works = () => {
 
             <div className='mt-6 mb-12'>
                 <ul className='pl-24 lg:pl-0 pr-12 lg:pr-0 flex no-scrollbar overflow-x-auto justify-around'>
-                    <li onClick={() => setActiveTab("Tab1")} className='min-w-fit font-bold hover:cursor-pointer text-white mx-3'>Short Courses</li>
-                    <li onClick={() => setActiveTab("Tab2")} className='min-w-fit font-bold hover:cursor-pointer text-white mx-3'>Expert Tracks</li>
-                    <li onClick={() => setActiveTab("Tab3")} className='min-w-fit font-bold hover:cursor-pointer text-white mx-3'>Microcredentials</li>
-                    <li onClick={() => setActiveTab("Tab4")} className='min-w-fit font-bold hover:cursor-pointer text-white mx-3'>Online Degrees</li>
+                    <li onClick={() => setActiveTab("Tab1")} className={`relative h-10 min-w-fit font-bold hover:cursor-pointer text-white mx-3 ${activeTab === "Tab1" ?  `active` : `hover:tab`}`}>Short Courses</li>
+                    <li onClick={() => setActiveTab("Tab2")} className={`relative h-10 min-w-fit font-bold hover:cursor-pointer text-white mx-3 ${activeTab === "Tab2" ?  `active` : `hover:tab`}`}>Expert Tracks</li>
+                    <li onClick={() => setActiveTab("Tab3")} className={`relative h-10 min-w-fit font-bold hover:cursor-pointer text-white mx-3 ${activeTab === "Tab3" ?  `active` : `hover:tab`}`}>Microcredentials</li>
+                    <li onClick={() => setActiveTab("Tab4")} className={`relative h-10 min-w-fit font-bold hover:cursor-pointer text-white mx-3 ${activeTab === "Tab4" ?  `active` : `hover:tab`}`}>Online Degrees</li>
                 </ul>
             </div>
 
